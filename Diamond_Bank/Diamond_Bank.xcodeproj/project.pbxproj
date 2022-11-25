@@ -12,6 +12,8 @@
 		C0590F5E292FAAC30035FAE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0590F5C292FAAC30035FAE7 /* LaunchScreen.storyboard */; };
 		C0590F73292FAC970035FAE7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0590F72292FAC970035FAE7 /* LoginView.swift */; };
 		C0590F75292FACB10035FAE7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0590F74292FACB10035FAE7 /* LoginViewController.swift */; };
+		C0590F7829301CC30035FAE7 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0590F7729301CC30035FAE7 /* OnboardingContainerViewController.swift */; };
+		C0590F7A29302AF60035FAE7 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0590F7929302AF60035FAE7 /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		C0590F5F292FAAC30035FAE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0590F72292FAC970035FAE7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C0590F74292FACB10035FAE7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C0590F7729301CC30035FAE7 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
+		C0590F7929302AF60035FAE7 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		C0590F50292FAAC30035FAE7 /* Diamond_Bank */ = {
 			isa = PBXGroup;
 			children = (
+				C0590F7629301C710035FAE7 /* Onboarding */,
 				C0590F6D292FAC350035FAE7 /* Login */,
 				C0590F6C292FAC2B0035FAE7 /* Files */,
 				C0590F51292FAAC30035FAE7 /* AppDelegate.swift */,
@@ -78,6 +83,15 @@
 				C0590F74292FACB10035FAE7 /* LoginViewController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		C0590F7629301C710035FAE7 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				C0590F7729301CC30035FAE7 /* OnboardingContainerViewController.swift */,
+				C0590F7929302AF60035FAE7 /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +166,9 @@
 			files = (
 				C0590F75292FACB10035FAE7 /* LoginViewController.swift in Sources */,
 				C0590F73292FAC970035FAE7 /* LoginView.swift in Sources */,
+				C0590F7A29302AF60035FAE7 /* OnboardingViewController.swift in Sources */,
 				C0590F52292FAAC30035FAE7 /* AppDelegate.swift in Sources */,
+				C0590F7829301CC30035FAE7 /* OnboardingContainerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

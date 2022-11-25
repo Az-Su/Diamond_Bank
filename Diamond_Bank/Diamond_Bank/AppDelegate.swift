@@ -17,8 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
-        window?.rootViewController = LoginViewController()
-        
+//        window?.rootViewController = LoginViewController()
+        window?.rootViewController = OnboardingContainerViewController()
+//        window?.rootViewController = OnboardingViewController(imageName: "1", titleText: "Make it simple", descriptionTitleText: "We pay attention to all your payments, and find way for saving your money.")
+
+
         return true
     }
 }
