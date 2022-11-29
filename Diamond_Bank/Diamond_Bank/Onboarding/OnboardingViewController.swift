@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Lottie
 
 class OnboardingViewController: UIViewController {
   
@@ -17,45 +18,40 @@ class OnboardingViewController: UIViewController {
         return stackView
     }()
     
-    private let imageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        
-        imageView.image = UIImage(named: "1")
-        return imageView
-    }()
-    
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textAlignment = .left
-        label.font = UIFont.preferredFont(forTextStyle: .title1)
+        label.textAlignment = .center
+        label.font = .boldSystemFont(ofSize: 32)
         label.adjustsFontForContentSizeCategory = true
         return label
     }()
     
-    private let descriptionTitle: UILabel = {
+    private let descriptionTitleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textAlignment = .left
-        label.font = UIFont.preferredFont(forTextStyle: .title3)
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 20)
         label.adjustsFontForContentSizeCategory = true
         label.numberOfLines = 0
         return label
     }()
     
-    private let imageName: String
+    private let animationView = LottieAnimationView()
+    
+    private var animationName: String
     private let titleText: String
     private let descriptionTitleText: String
     
-    init (imageName: String, titleText: String, descriptionTitleText: String) {
-        self.imageName = imageName
+    init (animationName: String, titleText: String, descriptionTitleText: String) {
+        
+        self.animationName = animationName
         self.titleText = titleText
         self.descriptionTitleText = descriptionTitleText
         
-        imageView.image = UIImage(named: imageName)
+        animationView.animation = LottieAnimation.named(animationName)
         titleLabel.text = titleText
-        descriptionTitle.text = titleText
+        descriptionTitleLabel.text = descriptionTitleText
         
         
         super.init(nibName: nil, bundle: nil)
@@ -69,8 +65,7 @@ class OnboardingViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         
-        
-        
+        setupAnimation()
         addSubviews()
         addConstraints()
     }
@@ -81,9 +76,11 @@ class OnboardingViewController: UIViewController {
 extension OnboardingViewController {
     
     func addSubviews() {
-        stackView.addArrangedSubview(imageView)
+
+        stackView.addArrangedSubview(animationView)
         stackView.addArrangedSubview(titleLabel)
-        stackView.addArrangedSubview(descriptionTitle)
+        stackView.addArrangedSubview(descriptionTitleLabel)
+        
         view.addSubview(stackView)
     }
     
@@ -99,7 +96,14 @@ extension OnboardingViewController {
     }
 }
 
-// MARK: Actions
+// MARK: Lottie Animation
 extension OnboardingViewController {
-    
+    func setupAnimation() {
+        animationView.contentMode = .scaleAspectFit
+        animationView.backgroundColor = .white
+        animationView.frame = view.bounds
+        animationView.backgroundBehavior = .pauseAndRestore
+        animationView.loopMode = .loop
+        animationView.play()
+    }
 }

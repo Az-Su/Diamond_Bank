@@ -1,11 +1,19 @@
 //
 //  ViewController.swift
-//  Bankey
+//  Diamond_Bank
 //
 //  Created by Sailau Almaz Maratuly on 19.11.2022.
 //
 
 import UIKit
+
+protocol LoginViewControllerDelegate: AnyObject {
+    func didLogin()
+}
+
+protocol LogoutDelegate: AnyObject {
+    func didLogout()
+}
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
@@ -53,6 +61,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         return label
     }()
     
+    weak var delegate: LoginViewControllerDelegate?
+    
     private var username: String? {
         return loginView.usernameTextField.text
     }
@@ -66,6 +76,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         addSubviews()
         addConstraints()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        signInButton.configuration?.showsActivityIndicator = false
     }
 
 }
@@ -139,6 +154,7 @@ extension LoginViewController {
         }
         if username == "Almaz" && password == "Almaz123" {
             signInButton.configuration?.showsActivityIndicator = true
+            delegate?.didLogin()
         } else {
             configureView(withMessage: "Incorrect username or password")
         }

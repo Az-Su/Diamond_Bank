@@ -1,6 +1,6 @@
 //
 //  LoginView.swift
-//  Bankey
+//  Diamond_Bank
 //
 //  Created by Sailau Almaz Maratuly on 19.11.2022.
 //

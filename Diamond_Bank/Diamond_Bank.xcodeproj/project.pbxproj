@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		854DD82C5F620854B12D255D /* Pods_Diamond_Bank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D46322625BAA3089403FC68 /* Pods_Diamond_Bank.framework */; };
+		C0385D682936990D00CAFC90 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0385D672936990D00CAFC90 /* DummyViewController.swift */; };
+		C0385D6B2936A29400CAFC90 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0385D6A2936A29400CAFC90 /* LocalState.swift */; };
 		C0590F52292FAAC30035FAE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0590F51292FAAC30035FAE7 /* AppDelegate.swift */; };
 		C0590F5B292FAAC30035FAE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0590F5A292FAAC30035FAE7 /* Assets.xcassets */; };
 		C0590F5E292FAAC30035FAE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0590F5C292FAAC30035FAE7 /* LaunchScreen.storyboard */; };
@@ -14,9 +17,16 @@
 		C0590F75292FACB10035FAE7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0590F74292FACB10035FAE7 /* LoginViewController.swift */; };
 		C0590F7829301CC30035FAE7 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0590F7729301CC30035FAE7 /* OnboardingContainerViewController.swift */; };
 		C0590F7A29302AF60035FAE7 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0590F7929302AF60035FAE7 /* OnboardingViewController.swift */; };
+		C0918AA0293375E2001A1917 /* onboarding-page2.json in Resources */ = {isa = PBXBuildFile; fileRef = C0918A9F293375E2001A1917 /* onboarding-page2.json */; };
+		C0918AA329337919001A1917 /* onboarding-page1.json in Resources */ = {isa = PBXBuildFile; fileRef = C0918AA129337919001A1917 /* onboarding-page1.json */; };
+		C0918AA429337919001A1917 /* onboarding-page3.json in Resources */ = {isa = PBXBuildFile; fileRef = C0918AA229337919001A1917 /* onboarding-page3.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D46322625BAA3089403FC68 /* Pods_Diamond_Bank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diamond_Bank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D99B0EC06013535C418C8C9 /* Pods-Diamond_Bank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond_Bank.release.xcconfig"; path = "Target Support Files/Pods-Diamond_Bank/Pods-Diamond_Bank.release.xcconfig"; sourceTree = "<group>"; };
+		C0385D672936990D00CAFC90 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
+		C0385D6A2936A29400CAFC90 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		C0590F4E292FAAC30035FAE7 /* Diamond_Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diamond_Bank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0590F51292FAAC30035FAE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0590F5A292FAAC30035FAE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -26,6 +36,10 @@
 		C0590F74292FACB10035FAE7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C0590F7729301CC30035FAE7 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		C0590F7929302AF60035FAE7 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		C0918A9F293375E2001A1917 /* onboarding-page2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "onboarding-page2.json"; sourceTree = "<group>"; };
+		C0918AA129337919001A1917 /* onboarding-page1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "onboarding-page1.json"; sourceTree = "<group>"; };
+		C0918AA229337919001A1917 /* onboarding-page3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "onboarding-page3.json"; sourceTree = "<group>"; };
+		CE14C3A0B58A21A9CBB125F8 /* Pods-Diamond_Bank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond_Bank.debug.xcconfig"; path = "Target Support Files/Pods-Diamond_Bank/Pods-Diamond_Bank.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +47,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				854DD82C5F620854B12D255D /* Pods_Diamond_Bank.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A1E705D7C184FF50919A456 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D46322625BAA3089403FC68 /* Pods_Diamond_Bank.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5FA20FC4E156C2DEF2D2D050 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE14C3A0B58A21A9CBB125F8 /* Pods-Diamond_Bank.debug.xcconfig */,
+				5D99B0EC06013535C418C8C9 /* Pods-Diamond_Bank.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C0385D692936A27F00CAFC90 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C0385D6A2936A29400CAFC90 /* LocalState.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		C0590F45292FAAC30035FAE7 = {
 			isa = PBXGroup;
 			children = (
 				C0590F50292FAAC30035FAE7 /* Diamond_Bank */,
 				C0590F4F292FAAC30035FAE7 /* Products */,
+				5FA20FC4E156C2DEF2D2D050 /* Pods */,
+				4A1E705D7C184FF50919A456 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +100,7 @@
 		C0590F50292FAAC30035FAE7 /* Diamond_Bank */ = {
 			isa = PBXGroup;
 			children = (
+				C0385D692936A27F00CAFC90 /* Utils */,
 				C0590F7629301C710035FAE7 /* Onboarding */,
 				C0590F6D292FAC350035FAE7 /* Login */,
 				C0590F6C292FAC2B0035FAE7 /* Files */,
@@ -69,6 +112,9 @@
 		C0590F6C292FAC2B0035FAE7 /* Files */ = {
 			isa = PBXGroup;
 			children = (
+				C0918AA129337919001A1917 /* onboarding-page1.json */,
+				C0918AA229337919001A1917 /* onboarding-page3.json */,
+				C0918A9F293375E2001A1917 /* onboarding-page2.json */,
 				C0590F5A292FAAC30035FAE7 /* Assets.xcassets */,
 				C0590F5C292FAAC30035FAE7 /* LaunchScreen.storyboard */,
 				C0590F5F292FAAC30035FAE7 /* Info.plist */,
@@ -81,6 +127,7 @@
 			children = (
 				C0590F72292FAC970035FAE7 /* LoginView.swift */,
 				C0590F74292FACB10035FAE7 /* LoginViewController.swift */,
+				C0385D672936990D00CAFC90 /* DummyViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -101,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0590F62292FAAC30035FAE7 /* Build configuration list for PBXNativeTarget "Diamond_Bank" */;
 			buildPhases = (
+				24B1DB23906287925976A524 /* [CP] Check Pods Manifest.lock */,
 				C0590F4A292FAAC30035FAE7 /* Sources */,
 				C0590F4B292FAAC30035FAE7 /* Frameworks */,
 				C0590F4C292FAAC30035FAE7 /* Resources */,
+				BD6683917C8264807EA679BE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,7 +179,7 @@
 				};
 			};
 			buildConfigurationList = C0590F49292FAAC30035FAE7 /* Build configuration list for PBXProject "Diamond_Bank" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -153,11 +202,56 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0590F5E292FAAC30035FAE7 /* LaunchScreen.storyboard in Resources */,
+				C0918AA329337919001A1917 /* onboarding-page1.json in Resources */,
 				C0590F5B292FAAC30035FAE7 /* Assets.xcassets in Resources */,
+				C0918AA429337919001A1917 /* onboarding-page3.json in Resources */,
+				C0918AA0293375E2001A1917 /* onboarding-page2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24B1DB23906287925976A524 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Diamond_Bank-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD6683917C8264807EA679BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Diamond_Bank/Pods-Diamond_Bank-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Diamond_Bank/Pods-Diamond_Bank-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Diamond_Bank/Pods-Diamond_Bank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C0590F4A292FAAC30035FAE7 /* Sources */ = {
@@ -165,6 +259,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0590F75292FACB10035FAE7 /* LoginViewController.swift in Sources */,
+				C0385D6B2936A29400CAFC90 /* LocalState.swift in Sources */,
+				C0385D682936990D00CAFC90 /* DummyViewController.swift in Sources */,
 				C0590F73292FAC970035FAE7 /* LoginView.swift in Sources */,
 				C0590F7A29302AF60035FAE7 /* OnboardingViewController.swift in Sources */,
 				C0590F52292FAAC30035FAE7 /* AppDelegate.swift in Sources */,
@@ -302,11 +398,13 @@
 		};
 		C0590F63292FAAC30035FAE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE14C3A0B58A21A9CBB125F8 /* Pods-Diamond_Bank.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y9QHBXLG7J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Diamond_Bank/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -328,11 +426,13 @@
 		};
 		C0590F64292FAAC30035FAE7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D99B0EC06013535C418C8C9 /* Pods-Diamond_Bank.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y9QHBXLG7J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Diamond_Bank/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
