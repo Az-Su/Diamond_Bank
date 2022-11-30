@@ -10,6 +10,8 @@
 		854DD82C5F620854B12D255D /* Pods_Diamond_Bank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D46322625BAA3089403FC68 /* Pods_Diamond_Bank.framework */; };
 		C0385D682936990D00CAFC90 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0385D672936990D00CAFC90 /* DummyViewController.swift */; };
 		C0385D6B2936A29400CAFC90 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0385D6A2936A29400CAFC90 /* LocalState.swift */; };
+		C0385D6D29376B5600CAFC90 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0385D6C29376B5600CAFC90 /* UIViewController+Utils.swift */; };
+		C0385D6F29376DF300CAFC90 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0385D6E29376DF300CAFC90 /* MainViewController.swift */; };
 		C0590F52292FAAC30035FAE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0590F51292FAAC30035FAE7 /* AppDelegate.swift */; };
 		C0590F5B292FAAC30035FAE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0590F5A292FAAC30035FAE7 /* Assets.xcassets */; };
 		C0590F5E292FAAC30035FAE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0590F5C292FAAC30035FAE7 /* LaunchScreen.storyboard */; };
@@ -27,6 +29,8 @@
 		5D99B0EC06013535C418C8C9 /* Pods-Diamond_Bank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diamond_Bank.release.xcconfig"; path = "Target Support Files/Pods-Diamond_Bank/Pods-Diamond_Bank.release.xcconfig"; sourceTree = "<group>"; };
 		C0385D672936990D00CAFC90 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 		C0385D6A2936A29400CAFC90 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
+		C0385D6C29376B5600CAFC90 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
+		C0385D6E29376DF300CAFC90 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C0590F4E292FAAC30035FAE7 /* Diamond_Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diamond_Bank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0590F51292FAAC30035FAE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0590F5A292FAAC30035FAE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				C0385D6A2936A29400CAFC90 /* LocalState.swift */,
+				C0385D6C29376B5600CAFC90 /* UIViewController+Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -105,6 +110,7 @@
 				C0590F6D292FAC350035FAE7 /* Login */,
 				C0590F6C292FAC2B0035FAE7 /* Files */,
 				C0590F51292FAAC30035FAE7 /* AppDelegate.swift */,
+				C0385D6E29376DF300CAFC90 /* MainViewController.swift */,
 			);
 			path = Diamond_Bank;
 			sourceTree = "<group>";
@@ -258,11 +264,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0385D6D29376B5600CAFC90 /* UIViewController+Utils.swift in Sources */,
 				C0590F75292FACB10035FAE7 /* LoginViewController.swift in Sources */,
 				C0385D6B2936A29400CAFC90 /* LocalState.swift in Sources */,
 				C0385D682936990D00CAFC90 /* DummyViewController.swift in Sources */,
 				C0590F73292FAC970035FAE7 /* LoginView.swift in Sources */,
 				C0590F7A29302AF60035FAE7 /* OnboardingViewController.swift in Sources */,
+				C0385D6F29376DF300CAFC90 /* MainViewController.swift in Sources */,
 				C0590F52292FAAC30035FAE7 /* AppDelegate.swift in Sources */,
 				C0590F7829301CC30035FAE7 /* OnboardingContainerViewController.swift in Sources */,
 			);

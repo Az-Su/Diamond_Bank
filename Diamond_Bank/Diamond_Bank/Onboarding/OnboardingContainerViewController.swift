@@ -84,10 +84,7 @@ class OnboardingContainerViewController: UIViewController {
         setup()
         addSubviews()
         addConstraints()
-        
     }
-    
-    
     
 }
 
