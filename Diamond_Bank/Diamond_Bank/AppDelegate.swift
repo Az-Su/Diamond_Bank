@@ -30,7 +30,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         dummyViewContoller.logoutDelegate = self
         
         
-        window?.rootViewController = mainViewController
+        window?.rootViewController = loginViewController
+//        window?.rootViewController = AccountSummaryViewController()
+//        window?.rootViewController = loginViewController
+
 //        window?.rootViewController = onboardingContainerViewController
         window?.overrideUserInterfaceStyle = .light
 
@@ -60,7 +63,7 @@ extension AppDelegate {
 extension AppDelegate: LoginViewControllerDelegate {
     func didLogin() {
         if LocalState.hasOnboarded {
-            setRootViewController(dummyViewContoller)
+            setRootViewController(mainViewController)
         } else {
             setRootViewController(onboardingContainerViewController)
         }
@@ -70,7 +73,7 @@ extension AppDelegate: LoginViewControllerDelegate {
 extension AppDelegate: OnboardingContainerViewControllerDelegate {
     func didFinishOnboarding() {
         LocalState.hasOnboarded = true
-        setRootViewController(dummyViewContoller)
+        setRootViewController(mainViewController)
     }
 }
 
